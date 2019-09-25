@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Congress</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="../static/css/primary_style.css" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="http://127.0.0.1:5000/home">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:5000/members">Members</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/insight">Data</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:8000/map.html">Map</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="wrapper">
+    <div class="hero text-center">
+        <h1>Members of 115th Congress</h1>
+      </div>
+
+  <div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+      <div class="col-sm-4">
+        <h2>Tweet Tweet <i style='font-size:24px' class='fa'>&#xf099;</i></h2>
+        <div class="txtbox">
+          <p>{{congress.tweet}}</p>
+        </div>
+        <h2>Additional Resources to Check Out</h2>
+        <ul class="nav nav-pills flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.congress.gov/" target='_blank'>Congress</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.house.gov/" target='_blank'>House of Reps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.speaker.gov/" target='_blank'>Speaker of the House</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://kids-clerk.house.gov" target='_blank'>Kids in the House</a>
+          </li>
+        </ul>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8">
+        <h2>House Of Representatives</h2>
+        <div class="House">
+          <p>Elected to a two-year term, each representative serves the people of a specific congressional district by
+            introducing bills and serving on committees, among other duties.</p>
+          <p>Elected by the whole of the House of Representatives, the Speaker acts as leader of the House and combines
+            several institutional and administrative roles.</p>
+          <br>
+          <br>
+
+          <h2>New Stories</h2>
+          <div class="row">
+              <div class="news_box">
+                <h4>{{congress.news_title}}</h4>
+                <a href="{{congress.news_snippet}}" target='_blank'>
+                <img src="{{congress.news_image}}" align="left" width="65%">
+                </a>
+              </div>
+  
+            </div>
+            </div>
+          </div>
+        </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+      <link rel="stylesheet" href="../static/css/primary_style.css">
+   
+
+  <footer class="footer">
+    <span class="bottom">US House of Representatives</span>
+  </footer>
+
+</body>
+
+</html>
