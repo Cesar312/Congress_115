@@ -20,7 +20,7 @@ Using these data sets and leveraging web scraping, JavaScript, DOM Manipulation,
 
 - A landing page that displays web-scraped data from Twitter and CNN.com
 - A table that lists the 115th House of Representatives with the added feature to filter on the State-level
-- Insight of the House of Represenatives with charts that visualize based on state, gender, party, and age
+- Insight of the House of Representatives with charts that visualize based on state, gender, party, and age
 - A map that displays each congressional district distinguished by a style layer related to their party 
 
 For the initial visualization page, we aggregate data from other websites.  Using BeautifulSoup library to scrape, we extract data from the Congress Twitter account and the most recent Congress news story from CNN.  The data is stored in Mongo DB.   In order to publish data in different HTML files, the app.py file assigns specific routes and global variables to accommodate the Flask environment.
@@ -303,7 +303,7 @@ Congress_data.to_json(orient='records')
 Step 6 : Add APP.js , Style.css and Index Files to add the filtred data webpage <br />
 
 ### Visualizations of Propublica Data
-Using the python df.describe() function we deduced that the average age of congress members is a little over 60 years. The youngest member is 35 years of afe and the oldest member is 90 years of age. <br />
+Using the python df.describe() function we deduced that the average age of congress members is a little over 60 years. The youngest member is 35 years of age and the oldest member is 90 years of age. <br />
 Further more using Matplotlib.pyplot histograms for visual representation we uncovered that most of the congress members were within 50-70 years of age. <br />
 ![115th US House Members - Age Histogram](115th_US_House_Members_Age_Histogram.png)
  <br />
